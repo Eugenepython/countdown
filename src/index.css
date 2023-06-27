@@ -1,0 +1,329 @@
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  background-image: url('assets/background.jpg');
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  //place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-style: solid;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+
+
+.wordHolder{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+.pie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  margin: 4px;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  border-radius: 50%;
+
+}
+
+.clockHolder {
+
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 12px;
+}
+
+
+.definition {
+font-size: 1.5rem;
+background: rgba(165, 42, 42, 0.5);
+color: white;
+width: 100%;
+
+
+}
+
+
+
+.gotItWrong{
+  background: rgba(255, 255, 255, 0.8); 
+  color: red;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.gotItRight {
+  background: rgba(255, 255, 255, 0.8); 
+  color: green;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.newAnagram {
+  background-color: #4CAF50; /* Green background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the button */
+  border: none; /* No border */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  margin: 10px;
+}
+
+.anagramAndInput {
+  color: yellow;
+  text-align: center;
+}
+
+.newAnagram:hover {
+  background-color: #45a049; /* Darker green background color on hover */
+}
+
+.giveUp {
+  background-color: #f44336; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  cursor: pointer; 
+  font-size: 16px; 
+  margin: 10px;
+}
+
+.giveUp:hover {
+  background-color: #d32f2f;
+}
+
+.theInputBox {
+  margin : 20px;
+  padding: 10px 20px; 
+  border: none; 
+  cursor: pointer; 
+  font-size: 2rem; 
+  text-align: center;
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.calCulation{
+  background-color:white;
+color: black;
+font-size: 2rem;
+margin: 10px;
+gap: 15px;
+text-align: center;
+}
+
+.number {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none;
+  cursor: pointer; 
+  font-size: 16px; 
+  margin: 5px;
+}
+
+
+.operator {
+  background-color: #f44336; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  cursor: pointer; 
+  font-size: 16px; 
+  margin: 5px;
+}
+
+.theNumbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  //border-style: solid;
+  padding: 15px;
+
+}
+
+
+.subMit{
+  background-color: peru; /* Green background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the button */
+  border: none; /* No border */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  margin: 5px;
+}
+
+.theAnswer{
+  background-color: rgb(44, 37, 77); /* Green background color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the button */
+  border: none; /* No border */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  margin: 5px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.numberHolder{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  //border-style: solid;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.Square {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  border-style: solid;
+  font-size: 2rem;
+  margin: 5px;
+  line-height: 100px;
+}
+
+
+
+.numberChoice {
+  justify-content: center;
+  align-items: center;
+  background:rgba(165, 42, 42, 0.5);
+  color: white;
+  margin: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+
+.bigOrSmall {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.getTheTarget {
+  background-color: #4CAF50; 
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding around the button */
+  border: none; /* No border */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  margin: 5px;
+  text-align : center;
+}
+
+
+
+
+.finalPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.headBar {
+  background-color: orange;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  top : 0px;
+}
+
+.heading {
+  margin: 15px;
+}
+
+.getRandomNumbers {
+text-align: center;
+//border-style: dotted;
+
+}
+
+.mathGame {
+  text-align: center;
+
+}
+
+.target {
+  //display: flex;
+  //-content: center;
+  //align-items: center;
+}
+
+.yourAnswer {
+text-align: center;
+font-size: 2rem;
+background-color: yellow;
+color: black;
+
+
+
+}
+
+.theTitle {
+font-size: 3rem;
+text-align: center;
+padding: 5px;
+
+}
+
+.theStory {
+  font-size: 2rem;
+  padding : 5px;
+  
+  
+}
+
+.timer {
+  text-align: center;
+}
